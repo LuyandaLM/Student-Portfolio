@@ -6,75 +6,69 @@ import { Link } from "react-router-dom";
 
 const App = () => {
   return (
-    <div className="demo-big-content">
+    <div class="demo-big-content">
       <Layout>
         <Header
-          className="header"
+          class="header"
           title={
             <Link style={{ color: "white" }} to="/">
-              <i className="fa fa-fw fa-home"></i>
-              Luyanda's Portfolio
+              <i class="fa fa-fw fa-home"></i>
             </Link>
           }
           scroll
         >
           <Navigation>
             <Link style={{ textDecoration: "none", color: "white" }} to="/">
-              <i className="fa fa-fw fa-home"></i>Home
+              <i class="fa fa-fw fa-home"></i>Home
             </Link>
             <Link
               style={{ textDecoration: "none", color: "white" }}
               to="/resume"
             >
-              <i classn="fas fa-fw fa-id-card"></i>Curriculum Vitae
+              <i class="fas fa-fw fa-id-card"></i>Curriculum Vitae
             </Link>
             <Link
               style={{ textDecoration: "none", color: "white" }}
-              to="/aboutme"
+              to="/testimonials"
             >
-              <i className="fas fa-at"></i>About Me
+              <i class="fas fa-at"></i>Testimonials
             </Link>
             <Link
               style={{ textDecoration: "none", color: "white" }}
               to="/projects"
             >
-              <i className="fas fa-laptop"></i>Projects
+              <i class="fas fa-laptop"></i>Projects
             </Link>
             <Link
               style={{ textDecoration: "none", color: "white" }}
               to="/contact"
             >
-              <i className="fas fa-tty"></i>Contact
+              <i class="fas fa-tty"></i>Contact
             </Link>
           </Navigation>
         </Header>
-        <Drawer
-          title={
-            <Link style={{ color: "black" }} to="/">
-              Luyanda's Portfolio
-            </Link>
-          }
-        >
+
+        <Drawer title={<Link style={{ color: "black" }} to="/"></Link>}>
           <Navigation>
             <Link style={{ color: "black" }} to="/">
-              <i className="fa fa-fw fa-home"></i>Home
+              <i class="fa fa-fw fa-home"></i>Home
             </Link>
             <Link style={{ color: "black" }} to="/resume">
-              <i className="fas fa-fw fa-id-card"></i>Curriculum Vitae
+              <i class="fas fa-fw fa-id-card"></i>Curriculum Vitae
             </Link>
-            <Link style={{ color: "black" }} to="/aboutme">
-              <i className="fas fa-at"></i>About Me
+            <Link style={{ color: "black" }} to="/testimonials">
+              <i class="fas fa-at"></i>testimonials
             </Link>
             <Link style={{ color: "black" }} to="/projects">
-              <i className="fas fa-laptop"></i>Projects
+              <i class="fas fa-laptop"></i>Projects
             </Link>
             <Link style={{ color: "black" }} to="/contact">
-              <i className="fas fa-tty"></i>Contact
+              <i class="fas fa-tty"></i>Contact
             </Link>
           </Navigation>
         </Drawer>
         <Content>
-          <div className="page-content" />
+          <div class="page-content" />
           <Main />
         </Content>
       </Layout>

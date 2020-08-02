@@ -1,57 +1,46 @@
 import React from "react";
-import { Grid, Cell, List, ListItem, ListItemContent } from "react-mdl";
 
-const Contact = () => {
+const ContactUs = () => {
   return (
-    <div className="contact-body">
-      <Grid className="contact-grid">
-        <Cell col={6}>
-          <h2>Luyanda Mabozo</h2>
-          <img
-            src="https://s3-eu-west-1.amazonaws.com/content.portfoliopad.com/images/9222/1246274/Xlarge/015.jpg?AWSAccessKeyId=AKIAI7DDKYEH73YBC5NA&Expires=1594067934&Signature=tkl9FfdMIRebh%2FhdSRDEfUsQOaY%3D"
-            alt="avatar"
-            style={{ height: "250px" }}
-          />
-          <p style={{ width: "75%", margin: "auto", paddingTop: "1em" }}></p>
-        </Cell>
-        <Cell col={6}>
-          <h2>Contact Me</h2>
-          <hr />
+    <div className="card bg-dark">
+      <h1>Contact Us</h1>
+      {/* <a href="mailto:someone@yoursite.com? &subject=Big%20News&body=Email-content-here">
+        <i class="fas fa-envelope-square"></i> Email Us
+      </a> */}
 
-          <div className="contact-list">
-            <List>
-              <ListItem>
-                <ListItemContent
-                  style={{ fontSize: "30px", fontFamily: "Anton" }}
-                >
-                  <i className="fa fa-phone-square" aria-hidden="true" />
-                  (084) 722-9233
-                </ListItemContent>
-              </ListItem>
-              <hr style={{ borderTop: "3px solid #833fb2", width: "50%" }} />
-              <ListItem>
-                <ListItemContent
-                  style={{ fontSize: "30px", fontFamily: "Anton" }}
-                >
-                  <i className="fa fa-envelope" aria-hidden="true" />
-                  Luyandamabozo@gmail.com
-                </ListItemContent>
-              </ListItem>
-              <hr style={{ borderTop: "3px solid #833fb2", width: "50%" }} />
-              <ListItem>
-                <ListItemContent
-                  style={{ fontSize: "30px", fontFamily: "Anton" }}
-                >
-                  <i className="fa fa-linkedin-square" aria-hidden="true" />
-                  Luyanda Mabozo
-                </ListItemContent>
-              </ListItem>
-            </List>
-          </div>
-        </Cell>
-      </Grid>
+      <form
+        action="mailto:luyandamabozo@gmail.com"
+        method="post"
+        enctype="text/plain"
+      >
+        <h6>
+          <b>Name:</b>
+        </h6>
+        <br />
+        <input type="text" name="name" required />
+        <br />
+        <h6>
+          <b>Email:</b>
+        </h6>
+        <br />
+        <input type="text" name="mail" required />
+        <br />
+        <h6>
+          <b>Comment:</b>
+        </h6>
+        <br />
+        <input type="text" name="comment" size="50" required />
+        <br />
+        <br />
+        <button className="btn btn-warning btn-sm">
+          <input type="submit" value="Send" required />
+        </button>
+        <button className="btn btn-warning btn-sm">
+          <input type="reset" value="Reset" required />
+        </button>
+      </form>
     </div>
   );
 };
 
-export default Contact;
+export default ContactUs;
