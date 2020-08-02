@@ -1,16 +1,13 @@
 import React from "react";
 import { Grid, Cell } from "react-mdl";
+import Image from "./012";
 
 const Landing = () => {
   return (
     <div class="flex-container bg-light">
       <Grid class="landing-grid">
         <Cell col={12}>
-          <img
-            src="https://s3-eu-west-1.amazonaws.com/content.portfoliopad.com/images/9222/1246274/Xlarge/012.jpg?AWSAccessKeyId=AKIAI7DDKYEH73YBC5NA&Expires=1596375199&Signature=6c%2BBBjD9JoJq9iLglzQrpO38WMA%3D"
-            alt="avatar"
-            class="avatar-img"
-          />
+          <Image />
 
           <div class="card">
             <h1>Luyanda Mabozo</h1>

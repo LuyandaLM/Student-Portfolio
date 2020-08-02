@@ -3,6 +3,7 @@ import { Cell } from "react-mdl";
 import Education from "./education";
 import Experience from "./experience";
 import Skills from "./skills";
+import Image from "./012";
 
 const Resume = () => {
   return (
@@ -10,13 +11,7 @@ const Resume = () => {
       <div class="row">
         <Cell class="resume-right-col" col={6}>
           <div style={{ textAlign: "center" }}>
-            <img
-              className="profile-image"
-              src="https://s3-eu-west-1.amazonaws.com/content.portfoliopad.com/images/9222/1246274/Xlarge/012.jpg?AWSAccessKeyId=AKIAI7DDKYEH73YBC5NA&Expires=1596375199&Signature=6c%2BBBjD9JoJq9iLglzQrpO38WMA%3D"
-              alt="avatar"
-              class="avatar-img"
-              style={{ height: "200" }}
-            />
+            <Image />
           </div>
 
           <h2 style={{ paddingTop: "2em" }}>Luyanda Mabozo</h2>
@@ -89,12 +84,7 @@ const Resume = () => {
             <Skills skill="React" progress={60} />
           </Cell>
           <Cell class="resume-right-col" col={6}>
-            <img
-              src="https://s3-eu-west-1.amazonaws.com/content.portfoliopad.com/images/9222/1246274/Xlarge/012.jpg?AWSAccessKeyId=AKIAI7DDKYEH73YBC5NA&Expires=1596375199&Signature=6c%2BBBjD9JoJq9iLglzQrpO38WMA%3D"
-              alt="avatar"
-              class="avatar-img"
-              style={{ height: "400px", margin: "50px" }}
-            />
+            <Image />
 
             <div class="card">
               <h1>About Me</h1>
